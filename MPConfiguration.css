@@ -115,6 +115,30 @@
     --innerPage-imageBgColor: #657783;
     --innerPage-mapBgColor: #efefef;
 }
+.mpp-innerpage h1 {
+    font-size: var(--innerPage-h1fontSize);
+    line-height: var(--innerPage-h1lineHeight);
+    font-family: var(--innerPage-fontFamily);
+}
+
+.mpp-innerpage h2 {
+    font-size: var(--innerPage-h2fontSize);
+    line-height: var(--innerPage-h2lineHeight);
+    font-family: var(--innerPage-fontFamily);
+}
+
+.mpp-innerpage h3 {
+    color: var(--innerPage-h3color);
+    font-size: var(--innerPage-h3fontSize);
+    line-height: var(--innerPage-h3lineHeight);
+    font-family: var(--innerPage-fontFamily);
+}
+
+.mpp-innerpage h4 {
+    font-size: var(--innerPage-h4fontSize);
+    line-height: var(--innerPage-h4lineHeight);
+    font-family: var(--innerPage-fontFamily);
+}
 
 /*--------------------------------------------*/
 /* Login                                      */
