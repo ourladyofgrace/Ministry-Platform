@@ -84,7 +84,7 @@
 :host {
     --innerPage-bgColor: #657783;
     --innerPage-textColor: rgba(64,64,64,.7);
-    --innerPage-fontSize: 18px;
+    --innerPage-font: 18px Palatino Linotype, Georgia, serif;
     --innerPage-lineHeight: 34px;
     --innerPage-primaryColor: #1583C6;
     --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
@@ -92,7 +92,6 @@
     /* headers */
     --innerPage-h1fontSize: 45px;
     --innerPage-h1lineHeight: 60px;
-    --innerPage-font-face: Palatino Linotype, Georgia, serif;
     --innerPage-h2fontSize: 24px;
     --innerPage-h2lineHeight: 34px;
     --innerPage-h3fontSize: 20px;
