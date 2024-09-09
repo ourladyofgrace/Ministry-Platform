@@ -27,6 +27,7 @@
     --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --progress-pledged: #1b88b0;
     --progress-received: #000;
+    --root-font-face: 'Open Sans', Arial, Sans-serif;
 }
 
 
@@ -62,6 +63,7 @@
 :host {
     --form-field-color: #657783;
     --form-field-fontFamily: 'Open Sans', Arial, sans-serif;
+    --form-field-letter-spacing: .05em;
     --form-field-margin: 8px;
     --form-field-borderradius: 4px;
     --form-field-padding: 20px 13px;
@@ -85,20 +87,12 @@
     --innerPage-textColor: rgba(64,64,64,.7);
     --innerPage-fontSize: 18px;
     --innerPage-fontFamily: 'Open Sans', Arial, sans-serif;
+    --innerpage-letter-spacing: .05em;
     --innerPage-lineHeight: 34px;
     --innerPage-primaryColor: #1583C6;
     --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --innerPage-borderRadius: 4px;
-    /* headers */
-    --innerPage-h1fontSize: 45px;
-    --innerPage-h1lineHeight: 60px;
-    --innerPage-h2fontSize: 24px;
-    --innerPage-h2lineHeight: 34px;
-    --innerPage-h3fontSize: 20px;
-    --innerPage-h3lineHeight: 28px;
-    --innerPage-h3color: #657783;
-    --innerPage-h4fontSize: 18px;
-    --innerPage-h4lineHeight: 24px;
+
     --innerPage-dateTimeFontSize: 28px;
     --innerPage-buttonBgColor: var(--innerPage-primaryColor);
     --innerPage-buttonHoverBgColor: var(--form-btn-primary-hover);
@@ -114,29 +108,47 @@
     --innerPage-imageBgColor: #657783;
     --innerPage-mapBgColor: #efefef;
 }
+    /* headers */
 .mpp-innerpage h1 {
-    font-size: var(--innerPage-h1fontSize);
-    line-height: var(--innerPage-h1lineHeight);
-    font-family: 'Palatino Linotype', Georgia, Serif;
+    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+    text-color: #1583C6;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.3em;
+    letter-spacing: .05em;
 }
 
 .mpp-innerpage h2 {
-    font-size: var(--innerPage-h2fontSize);
-    line-height: var(--innerPage-h2lineHeight);
-    font-family: 'Palatino Linotype', Georgia, Serif;
+    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+    text-color: rgba(0, 0, 0, .75);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.15em;
+    letter-spacing: .02em;
 }
 
 .mpp-innerpage h3 {
-    color: var(--innerPage-h3color);
-    font-size: var(--innerPage-h3fontSize);
+    color: rgba(0, 0, 0, .7);
     line-height: var(--innerPage-h3lineHeight);
-    font-family: 'Palatino Linotype', Georgia, Serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.3em;
+    letter-spacing: .05em;
 }
 
 .mpp-innerpage h4 {
-    font-size: var(--innerPage-h4fontSize);
-    line-height: var(--innerPage-h4lineHeight);
-    font-family: 'Palatino Linotype', Georgia, Serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.mpp-innerpage--special-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10px;
 }
 
 /*--------------------------------------------*/
