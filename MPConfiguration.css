@@ -92,14 +92,12 @@
     /* headers */
     --innerPage-h1fontSize: 45px;
     --innerPage-h1lineHeight: 60px;
-    --innerPage-h1font: Palatino Linotype, Georgia, serif;
+    --innerPage-font-face: Palatino Linotype, Georgia, serif;
     --innerPage-h2fontSize: 24px;
     --innerPage-h2lineHeight: 34px;
-    --innerPage-h2font: Palatino Linotype, Georgia, serif;
     --innerPage-h3fontSize: 20px;
     --innerPage-h3lineHeight: 28px;
     --innerPage-h3color: #657783;
-    --innerPage-h3font: Palatino Linotype, Georgia, serif;
     --innerPage-h4fontSize: 18px;
     --innerPage-h4lineHeight: 24px;
     --innerPage-dateTimeFontSize: 28px;
