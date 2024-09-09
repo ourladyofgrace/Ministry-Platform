@@ -92,6 +92,7 @@
     /* headers */
     --innerPage-h1fontSize: 45px;
     --innerPage-h1lineHeight: 60px;
+    --innerPage-h1fontFamily: "Palatino Linotype", Georgia, serif;
     --innerPage-h2fontSize: 24px;
     --innerPage-h2lineHeight: 34px;
     --innerPage-h3fontSize: 20px;
