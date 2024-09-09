@@ -27,7 +27,6 @@
     --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --progress-pledged: #1b88b0;
     --progress-received: #000;
-    --root-font-face: 'Palatino Linotype', Georgia, serif;
 }
 
 
@@ -62,7 +61,7 @@
 /*--------------------------------------------*/
 :host {
     --form-field-color: #657783;
-    --form-field-fontFamily: var(--root-font-face);
+    --form-field-fontFamily: 'Open Sans', Arial, sans-serif;
     --form-field-margin: 8px;
     --form-field-borderradius: 4px;
     --form-field-padding: 20px 13px;
@@ -85,7 +84,7 @@
     --innerPage-bgColor: #657783;
     --innerPage-textColor: rgba(64,64,64,.7);
     --innerPage-fontSize: 18px;
-    --innerPage-fontFamily: Palatino Linotype, Georgia, serif;
+    --innerPage-fontFamily: 'Open Sans', Arial, sans-serif;
     --innerPage-lineHeight: 34px;
     --innerPage-primaryColor: #1583C6;
     --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
@@ -118,26 +117,26 @@
 .mpp-innerpage h1 {
     font-size: var(--innerPage-h1fontSize);
     line-height: var(--innerPage-h1lineHeight);
-    font-family: var(--innerPage-fontFamily);
+    font-family: 'Palatino Linotype', Georgia, Serif;
 }
 
 .mpp-innerpage h2 {
     font-size: var(--innerPage-h2fontSize);
     line-height: var(--innerPage-h2lineHeight);
-    font-family: var(--innerPage-fontFamily);
+    font-family: 'Palatino Linotype', Georgia, Serif;
 }
 
 .mpp-innerpage h3 {
     color: var(--innerPage-h3color);
     font-size: var(--innerPage-h3fontSize);
     line-height: var(--innerPage-h3lineHeight);
-    font-family: var(--innerPage-fontFamily);
+    font-family: 'Palatino Linotype', Georgia, Serif;
 }
 
 .mpp-innerpage h4 {
     font-size: var(--innerPage-h4fontSize);
     line-height: var(--innerPage-h4lineHeight);
-    font-family: var(--innerPage-fontFamily);
+    font-family: 'Palatino Linotype', Georgia, Serif;
 }
 
 /*--------------------------------------------*/
