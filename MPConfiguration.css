@@ -78,6 +78,9 @@
     --form-invalid: #dc3545;
     --form-field-disabled: #ebebe4;
 }
+.mppw-form-wrapper {
+    display: none;
+}
 
 /*--------------------------------------------*/
 /* Inner Page Details                         */
