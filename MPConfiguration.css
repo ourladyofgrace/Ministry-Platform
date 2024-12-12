@@ -163,6 +163,7 @@
 /*--------------------------------------------*/
 /* Household                                  */
 /*--------------------------------------------*/
+.mpp-household--header-container {
 .mpp-household {
     color: #1583C6;
 }
@@ -193,6 +194,7 @@
     font-size: 18px;
     line-height: 1.3em;
     letter-spacing: normal;
+}
 }
 
 /*--------------------------------------------*/
