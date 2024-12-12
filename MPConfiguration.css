@@ -86,7 +86,7 @@
 :host {
     --innerPage-bgColor: #657783;
     --innerPage-textColor: rgba(64,64,64,.7);
-    --innerPage-fontSize: 18px;
+    --innerPage-fontSize: 16px;
     --innerPage-fontFamily: 'Open Sans', Arial, sans-serif;
     --innerpage-letter-spacing: .05em;
     --innerPage-lineHeight: 34px;
@@ -151,6 +151,18 @@
     line-height: normal;
     padding-bottom: 10px;
 }
+
+
+/*--------------------------------------------*/
+/* Login                                      */
+/*--------------------------------------------*/
+:host {
+    --component-bgColor: #657783;
+}
+
+/*--------------------------------------------*/
+/* Household                                  */
+/*--------------------------------------------*/
 .mpp-household {
     color: #1583C6;
 }
@@ -163,12 +175,24 @@
     line-height: 1.3em;
     letter-spacing: .05em;
 }
-
-/*--------------------------------------------*/
-/* Login                                      */
-/*--------------------------------------------*/
-:host {
-    --component-bgColor: #657783;
+.mpp-household h2 {
+    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+    color: rgba(0, 0, 0, .75);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.15em;
+    letter-spacing: .02em;
+}
+.mpp-household h3 {
+    color: rgba(0, 0, 0, .7);
+    line-height: var(--innerPage-h3lineHeight);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.3em;
+    letter-spacing: normal;
 }
 
 /*--------------------------------------------*/
