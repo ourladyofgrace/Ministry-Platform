@@ -70,7 +70,7 @@
     --form-field-bgcolor: #f9f9f9;
     --form-field-bgcolor--active: #f6f7f9;
     --form-field-border: #b4c5cf;
-    --form-field-border--active: #80bdff;
+    --form-field-border--active: #1583C6;
     --form-field-boxshadow--active: 0 0 0 0.2rem rgba(0, 123, 255, .25);
     --form-field-boxshadow--valid: 0 0 0 0.2rem rgba(40, 167, 69, .25);
     --form-field-boxshadow--invalid: 0 0 0 0.2rem rgba(220, 53, 69, .25);
@@ -150,6 +150,18 @@
     font-weight: 700;
     line-height: normal;
     padding-bottom: 10px;
+}
+.mpp-household {
+    color: #1583C6;
+}
+.mpp-household h1 {
+    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+    color: #1583C6;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.3em;
+    letter-spacing: .05em;
 }
 
 /*--------------------------------------------*/
