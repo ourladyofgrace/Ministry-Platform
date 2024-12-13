@@ -86,7 +86,7 @@
 :host {
     --innerPage-bgColor: #657783;
     --innerPage-textColor: rgba(64,64,64,.7);
-    --innerPage-fontSize: 16px;
+    --innerPage-fontSize: 14px;
     --innerPage-fontFamily: 'Open Sans', Arial, sans-serif;
     --innerpage-letter-spacing: .05em;
     --innerPage-lineHeight: 34px;
