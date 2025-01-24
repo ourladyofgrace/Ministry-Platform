@@ -242,8 +242,11 @@
 
 /* Event cards */
 .mpp-card--subtitle.event-date-range {
+    month: long;
+    weekday: long;
 }
 .mpp-card--subtitle.event-location {	
+    display: none;
 }
 .mpp-card--description {
 }
