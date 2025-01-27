@@ -164,6 +164,7 @@
     line-height: var(--innerPage-lineHeight);
 }
 .mpp-innerpage--fixed-imgcontainer {
+    margin-bottom: 25px;
 }
 .mpp-innerpage--fixed-img {
     background-position: center;
