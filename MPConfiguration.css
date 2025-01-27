@@ -89,11 +89,10 @@
     --innerPage-fontSize: 14px;
     --innerPage-fontFamily: 'Open Sans', Arial, sans-serif;
     --innerpage-letter-spacing: .05em;
-    --innerPage-lineHeight: 34px;
+    --innerPage-lineHeight: normal;
     --innerPage-primaryColor: #1583C6;
     --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --innerPage-borderRadius: 4px;
-
     --innerPage-dateTimeFontSize: 28px;
     --innerPage-buttonBgColor: var(--innerPage-primaryColor);
     --innerPage-buttonHoverBgColor: var(--form-btn-primary-hover);
@@ -153,6 +152,12 @@
     font-weight: 700;
     line-height: normal;
     padding-bottom: 10px;
+}
+.mpp-innerpage--special-content {
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666;
+    line-height: normal;
 }
 .mpp-innerpage p {
     font-size: var(--innerPage-fontSize);
