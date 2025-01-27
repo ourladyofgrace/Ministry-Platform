@@ -164,7 +164,7 @@
     line-height: var(--innerPage-lineHeight);
 }
 .mpp-innerpage--fixed-imgcontainer {
-    position: relative;
+
     height: 200px;
     background-repeat: no-repeat;
 }
