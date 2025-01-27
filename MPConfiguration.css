@@ -164,9 +164,7 @@
     line-height: var(--innerPage-lineHeight);
 }
 .mpp-innerpage--fixed-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 .mpp-innerpage--datetime {
     display: flex;
