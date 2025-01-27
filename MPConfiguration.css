@@ -4,7 +4,7 @@
 :host {
     --root-text-color: rgba(64,64,64,.7);
     --root-font-size: 14px;
-    --root-line-height: 24px;
+    --root-line-height: 2em;
     --primary: #1583C6;
     --secondary: #7F4098;
     --form-field-bgcolor: #f9f9f9;
@@ -89,7 +89,7 @@
     --innerPage-fontSize: 14px;
     --innerPage-fontFamily: 'Open Sans', Arial, sans-serif;
     --innerpage-letter-spacing: .05em;
-    --innerPage-lineHeight: normal;
+    --innerPage-lineHeight: 2em;
     --innerPage-primaryColor: #1583C6;
     --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --innerPage-borderRadius: 4px;
@@ -163,8 +163,18 @@
     font-size: var(--innerPage-fontSize);
     line-height: var(--innerPage-lineHeight);
 }
+.mpp-innerpage--fixed-imgcontainer {
+    position: relative;
+    height: 200px;
+    background-repeat: no-repeat;
+}
 .mpp-innerpage--fixed-img {
-    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
 }
 .mpp-innerpage--datetime {
     display: flex;
