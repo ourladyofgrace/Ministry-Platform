@@ -160,6 +160,13 @@
 }
 .mpp-innerpage--fixed-img {
 }
+.mpp-innerpage--datetime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
 
 /*--------------------------------------------*/
 /* Login                                      */
