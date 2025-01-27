@@ -163,7 +163,6 @@
     font-size: var(--innerPage-fontSize);
     line-height: var(--innerPage-lineHeight);
 }
-/* Trying to center image-
 .mpp-innerpage--fixed-imgcontainer {
     display: grid;
     place-items: center;
@@ -172,7 +171,6 @@
     max-width: 100%;
     height: auto;
 }
-*/
 .mpp-innerpage--datetime {
     display: flex;
     align-items: center;
