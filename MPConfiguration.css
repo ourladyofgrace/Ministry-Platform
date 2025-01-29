@@ -139,7 +139,7 @@
     color: var(--h1-color);
     font-weight: var(--h1-font-weight);
     font-style: var(--h1-font-style);
-    font-size: var(--h2-font-size);
+    font-size: var(--h1-font-size);
     line-height: var(--h1-line-height);
     letter-spacing: var(--h1-letter-spacing);
     text-align: center;
