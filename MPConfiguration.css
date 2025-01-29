@@ -3,15 +3,19 @@
 /*--------------------------------------------*/
 :host {
     --root-text-color: rgba(64,64,64,.7);
-    --root-font-size: 14px;
-    --root-line-height: 2em;
     --primary: #1583C6;
     --secondary: #7F4098;
+    --gray: #657783;
+    --form-field-color: var(--gray);
     --form-field-bgcolor: #f9f9f9;
     --form-field-border: #b4c5cf;
-    --form-field-border--active: #1583C6;
+    --form-field-border--active: var(--primary);
     --form-valid: #42bc34;
     --form-invalid: #dc3545;
+    --form-field-disabled: #ebebe4;
+    --form-field-boxshadow--active: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+    --form-field-boxshadow--valid: 0 0 0 0.2rem rgba(40, 167, 69, .25);
+    --form-field-boxshadow--invalid: 0 0 0 0.2rem rgba(220, 53, 69, .25);
     --form-btn-primary-text: #fff;
     --form-btn-primary-bgcolor: var(--primary);
     --form-btn-primary-hover: #a6c1e5;
@@ -20,63 +24,83 @@
     --form-btn-secondary-bgcolor: #fff;
     --form-btn-secondary-hover: #f6f7f9;
     --form-btn-secondary-active: #ededed;
-    --form-btn-disabled: #657783;
+    --form-btn-disabled: var(--gray);
     --card-bgcolor: #fff;
     --card-title-color: #696969;
     --card-header-bgcolor: #6c757d;
     --box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --progress-pledged: #1b88b0;
     --progress-received: #000;
-    --root-font-face: 'Open Sans', Arial, Sans-serif;
 }
 
+/*--------------------------------------------*/
+/* CSS Font Variables                        */
+/*--------------------------------------------*/
+:host {
+    --root-font-size: 14px;
+    --root-line-height: 2em;
+    --root-font-face: 'Open Sans', Arial, Sans-serif;
+    --root-font-letter-spacing: .05em;
+    --h1-font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+    --h1-color: var(--primary);
+    --h1-font-weight: 400;
+    --h1-font-style: normal;
+    --h1-font-size: 32px;
+    --h1-line-height: 1.3em;
+    --h1-letter-spacing: .05em;
+    --h2-font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+    --h2-color: rgba(0, 0, 0, .75);
+    --h2-font-style: normal;
+    --h2-font-weight: 400;
+    --h2-font-size: 24px;
+    --h2-line-height: 1.15em;
+    --h2-letter-spacing: .02em;
+    --h3-color: rgba(0, 0, 0, .7);
+    --h3-font-family: 'Open Sans', sans-serif;
+    --h3-font-weight: 700;
+    --h3-font-style: normal;
+    --h3-font-size: 18px;
+    --h3-line-height: 1.3em;
+    --h3-letter-spacing: normal;
+}
 
 /*--------------------------------------------*/
 /* Card                                       */
 /*--------------------------------------------*/
 :host {
-    --card-textColor: rgba(64,64,64,.7);
+    --card-textColor: var(--root-text-color);
     --card-borderRadius: 4px;
     --card-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
-    --card-primaryColor: #1583C6;
-    --card-badgeBgColor: var(--card-textColor);
+    --card-primaryColor: var(--primary);
+    --card-badgeBgColor: var(--root-text-color);
     --card-headerBgColor: #666;
-    --card-badgeStatusActiveColor: var(--card-primaryColor);
+    --card-badgeStatusActiveColor: var(--primary);
     --card-badgeStatusPendingColor: #f0d030;
     --card-badgeStatusDiscontinuedColor: #ededed;
     --card-badgeStatusCompleteColor: #77be43;
-    --card-fontSize: 14px;
+    --card-fontSize: var(--root-font-size);
     --card-fontSizeHeader: 18px;
     --card-lineHeight: 24px;
     --card-progressBarColor: #1b88b0;
     --card-progressBarActiveColor: linear-gradient(90deg, #1b88b0 0%, #1fb5ac 100%);
     --card-progressBarRemainingColor: #efefef;
     --card-progressBarCompleteColor: #77be43;
-    --card-imageBgColor: #657783;
-    --card-checkboxDefaultColor: #657783;
+    --card-imageBgColor: var(--gray);
+    --card-checkboxDefaultColor: var(--gray);
     --card-labelBgColor: #efefef;
+}
+.mpp-card--title {
 }
 
 /*--------------------------------------------*/
 /* Form                                       */
 /*--------------------------------------------*/
 :host {
-    --form-field-color: #657783;
-    --form-field-fontFamily: 'Open Sans', Arial, sans-serif;
-    --form-field-letter-spacing: .05em;
+    --form-field-fontFamily: var(--root-font-face);
+    --form-field-letter-spacing: var(--root-font-letter-spacing);
     --form-field-margin: 8px;
     --form-field-borderradius: 4px;
     --form-field-padding: 20px 13px;
-    --form-field-bgcolor: #f9f9f9;
-    --form-field-bgcolor--active: #f6f7f9;
-    --form-field-border: #b4c5cf;
-    --form-field-border--active: #1583C6;
-    --form-field-boxshadow--active: 0 0 0 0.2rem rgba(0, 123, 255, .25);
-    --form-field-boxshadow--valid: 0 0 0 0.2rem rgba(40, 167, 69, .25);
-    --form-field-boxshadow--invalid: 0 0 0 0.2rem rgba(220, 53, 69, .25);
-    --form-valid: #28a745;
-    --form-invalid: #dc3545;
-    --form-field-disabled: #ebebe4;
 }
 
 
@@ -84,13 +108,13 @@
 /* Inner Page Details                         */
 /*--------------------------------------------*/
 :host {
-    --innerPage-bgColor: #657783;
+    --innerPage-bgColor: var(--gray);
     --innerPage-textColor: rgba(64,64,64,.7);
-    --innerPage-fontSize: 14px;
-    --innerPage-fontFamily: 'Open Sans', Arial, sans-serif;
-    --innerpage-letter-spacing: .05em;
-    --innerPage-lineHeight: 2em;
-    --innerPage-primaryColor: #1583C6;
+    --innerPage-fontSize: var(--root-font-size);
+    --innerPage-fontFamily: var(--root-font-face);
+    --innerpage-letter-spacing: var(--root-font-letter-spacing);
+    --innerPage-lineHeight: var(--root-line-height);
+    --innerPage-primaryColor: var(--primary);
     --innerPage-boxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.35);
     --innerPage-borderRadius: 4px;
     --innerPage-dateTimeFontSize: 28px;
@@ -102,62 +126,63 @@
     --innerPage-progressBarRemainingColor: var(--card-progressBarRemainingColor);
     --innerPage-progressBarCompleteColor: var(--card-progressBarCompleteColor);
     --innerPage-labelBgColor: #efefef;
-    --innerPage-linkColor: #1583C6;
+    --innerPage-linkColor: var(--primary);
     --innerPage-linkHoverColor: #a6c1e5;
-    --innerPage-linkActiveColor: #1583C6;
-    --innerPage-imageBgColor: #657783;
+    --innerPage-linkActiveColor: var(--primary);
+    --innerPage-imageBgColor: var(--gray);
     --innerPage-mapBgColor: #efefef;
 }
     /* headers */
 .mpp-innerpage h1 {
-    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
-    color: #1583C6;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 1.3em;
-    letter-spacing: .05em;
+    font-family: var(--h1-font-family);
+    color: var(--h1-color);
+    font-weight: var(--h1-font-weight);
+    font-style: var(--h1-font-style);
+    font-size: var(--h2-font-size);
+    line-height: var(--h1-line-height);
+    letter-spacing: var(--h1-letter-spacing);
     text-align: center;
 }
 
 .mpp-innerpage h2 {
-    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
-    color: rgba(0, 0, 0, .75);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.15em;
-    letter-spacing: .02em;
+    font-family: var(--h2-font-family);
+    color: var(--h2-color);
+    font-style: var(--h2-font-style);
+    font-weight: var(--h2-font-weight);
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+    letter-spacing: var(--h2-letter-spacing);
     text-align: center;
 }
 
 .mpp-innerpage h3 {
-    color: rgba(0, 0, 0, .7);
-    line-height: var(--innerPage-h3lineHeight);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.3em;
-    letter-spacing: normal;
+    color: var(--h3-color);
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    font-style: var(--h3-font-style);
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
+    letter-spacing: var(--h3-letter-spacing);
 }
 
 .mpp-innerpage h4 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--root-font-face);
     font-weight: 700;
+    color: var(--root-text-color);
 }
+
 .mpp-innerpage--special-title {
-    color: rgba(0, 0, 0, .7);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: normal;
+    color: var(--h3-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    line-height: var(--h3-line-height);
     padding-bottom: 10px;
 }
 .mpp-innerpage--special-content {
     padding-left: 30px;
-    font-size: 14px;
-    color: #666;
-    line-height: normal;
+    font-size: var(--root-font-size);
+    color: var(--root-text-color);
+    line-height: var(--root-line-height);
 }
 .mpp-innerpage p {
     font-size: var(--innerPage-fontSize);
@@ -181,42 +206,41 @@
 /* Login                                      */
 /*--------------------------------------------*/
 :host {
-    --component-bgColor: #657783;
+    --component-bgColor: var(--gray);
 }
 
 /*--------------------------------------------*/
 /* Household                                  */
 /*--------------------------------------------*/
 .mpp-household {
-    color: #1583C6;
+    color: var(--primary);
 }
 .mpp-household h1 {
-    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
-    color: #1583C6;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 1.3em;
-    letter-spacing: .05em;
+    font-family: var(--h1-font-family);
+    color: var(--h1-color);
+    font-weight: var(--h1-font-weight);
+    font-style: var(--h1-font-style);
+    font-size: var(--h2-font-size);
+    line-height: var(--h1-line-height);
+    letter-spacing: var(--h1-letter-spacing);
 }
 .mpp-household h2 {
-    font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
-    color: rgba(0, 0, 0, .75);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 1.15em;
-    letter-spacing: .02em;
+    font-family: var(--h2-font-family);
+    color: var(--h2-color);
+    font-style: var(--h2-font-style);
+    font-weight: var(--h2-font-weight);
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+    letter-spacing: var(--h2-letter-spacing);
 }
 .mpp-household h3 {
-    color: rgba(0, 0, 0, .7);
-    line-height: var(--innerPage-h3lineHeight);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.3em;
-    letter-spacing: normal;
+    color: var(--h3-color);
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    font-style: var(--h3-font-style);
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
+    letter-spacing: var(--h3-letter-spacing);
 }
 
 /*--------------------------------------------*/
@@ -239,8 +263,6 @@
 /*--------------------------------------------*/
 /* Custom Card Builder classes                */
 /*--------------------------------------------*/
-.mpp-card--title {
-}
 
 /* Groups cards */
 .mpp-card--subtitle.group-location {
@@ -266,16 +288,14 @@
 
 /* Event cards */
 .mpp-card--subtitle.event-date-range {
-    month: long;
-    weekday: long;
 }
 .mpp-card--subtitle.event-location {	
-    display: none;
 }
 .mpp-card--description {
 }
 
-/* Removes "Event Finder" Header and search bar */
+
+/*  Removes "Event Finder" Header and search bar  */
 .mppw-form-wrapper {
     display: none;
 }
